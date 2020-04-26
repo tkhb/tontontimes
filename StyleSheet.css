@@ -1,0 +1,229 @@
+body {
+  background-color: whitesmoke;
+  color: #333;
+  font-family: 'Cormorant Upright',serif;
+  margin:0 auto;
+}
+
+/* header */
+
+header {
+  background-image: url(image/top.jpg);
+  background-size: 100%;
+  width: 100%;
+  height:auto;
+  padding:30px 0;
+}
+
+.header-top h1{
+  text-align: center;
+  font-size:120px; 
+  margin:30px; 
+  width: auto;
+}
+
+.header-bottom{
+  background-color:rgba(77, 71, 71, 0.43);
+  border-top:2px solid rgba(77, 71, 71, 0.7);
+  border-bottom:2px solid rgba(77, 71, 71, 0.7);
+  text-align: center;
+
+}
+
+.page-list-item{
+  display: inline-block;
+  font-size:30px;
+}
+
+.header-bottom ul{
+  padding: 0%;
+  margin: 0%;
+  height: 70px;
+}
+
+.btn{
+  color: white;
+  padding: 0 20px;
+  width:100%;
+  text-decoration: none;
+  list-style-type: none;
+  line-height: 70px;
+  display: block;
+  transition: 0.5s;
+}
+
+.btn:hover{
+  background-color:rgba(77, 71, 71, 0.7);
+}
+
+/* メイン内容 */
+
+.main{
+  margin:30px 50px;
+  margin-top:70px;
+}
+
+.contents{
+  height:500px;
+  
+}
+
+.main-box{
+  margin:20px;
+  height:400px;
+}
+
+.title{
+  background-color:rgba(77, 71, 71, 0.7);
+  color:white;
+  text-align: center;
+}
+
+.title h2{
+  font-size:30px;
+  margin: 30px auto;
+  display: inline;
+}
+
+/* days main */
+
+.days-item {
+  width:33.333333%;
+  float: left;
+  padding:10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* .days-item img:hover{
+  width:200%;
+} */
+
+/* about main */
+
+.about-box{
+  width: 50%;
+  float: left;
+  padding:10px;
+  box-sizing: border-box;
+  text-align: center;
+  /* height: auto;
+  overflow: hidden; */
+}
+
+.details img{
+  border-radius: 20px;
+  display: block;
+  margin:0 auto;
+  margin-bottom: 30px;
+}
+
+.details p{
+  line-height: 5px;
+}
+
+.tontontimes {
+  background-image: url(image/top.jpg);
+  background-size: cover;
+  height: 100%;
+  /* border-radius: 20px; */
+  width: 50%;
+  color: white;
+}
+
+.tontontimes-title{
+  font-size: larger;
+  background-color: rgba(255, 254, 189, 0.8);
+  border-bottom:2px solid rgba(77, 71, 71, 0.7);
+  padding: 5px;
+  color: #333;
+}
+
+.tontontimes ul{
+  padding: 0;
+
+}
+
+.tontontimes li{
+  list-style-type: none;
+  width: 33%;
+  float: left;
+  border: 1px solid rgba(77, 71, 71, 0.7);
+  box-sizing: border-box;
+}
+
+.tontontimes a{
+  display: block;
+  line-height: 60px;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(77, 71, 71, 0.8);
+  transition: 0.5s;
+}
+
+.tontontimes a:hover{
+  background-color: rgba(255, 254, 189, 0.8);
+  color: #333;
+}
+
+li .tt202005, li .tt202006,li .tt202007, li .tt202008, li .tt202009, li .tt202010, li .tt202011, li .tt202012{
+  background-color:rgba(77,71,71,0.5);
+  pointer-events: none;
+}
+
+
+/* travel main */
+.travel-item {
+  width:25%;
+  float: left;
+  padding:10px;
+  box-sizing: border-box;
+}
+
+.travel-box{
+  background-color: turquoise;
+  height:100px;
+}
+
+/* food main */
+
+/* links main */
+
+.links {
+  font-size:50px;
+  color:rgba(77, 71, 71, 1);
+  float: left;
+  width: 33.333333%;
+  text-align: center;
+  padding-top: 30px;
+  transition: 0.5s
+
+}
+
+.links:hover{
+  border-bottom: 2px solid #333;
+  font-size: 55px;
+}
+
+.link-main ul{
+  list-style-type: none;
+}
+.link-main a{
+  text-decoration: none;
+}
+
+
+
+/* footer   */
+footer{
+  background-image: url(image/top.jpg);
+  background-size: cover;
+  text-align: center;
+  color:white;
+  height:120px;
+}
+
+footer p{
+  margin:0;
+  padding:20px;
+}
