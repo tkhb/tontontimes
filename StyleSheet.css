@@ -64,13 +64,17 @@ header {
 }
 
 .contents{
-  height:500px;
-  
+  width: 100%;
+  height: auto;
+  text-align: center;
+  overflow: auto;
 }
 
 .main-box{
   margin:20px;
-  height:400px;
+  width: auto;
+  height: auto;
+  overflow: auto;
 }
 
 .title{
@@ -88,16 +92,14 @@ header {
 /* days main */
 
 .days-item {
-  width:33.333333%;
+  width:32%;
   float: left;
-  padding:10px;
   box-sizing: border-box;
   text-align: center;
+  border: 1px solid rgba(77, 71, 71, 0.8);
+  margin-right: 10px;
+  border-radius: 5px;
 }
-
-/* .days-item img:hover{
-  width:200%;
-} */
 
 /* about main */
 
@@ -109,6 +111,7 @@ header {
   text-align: center;
   /* height: auto;
   overflow: hidden; */
+
 }
 
 .details img{
@@ -173,19 +176,40 @@ li .tt202005, li .tt202006,li .tt202007, li .tt202008, li .tt202009, li .tt20201
 
 
 /* travel main */
-.travel-item {
-  width:25%;
-  float: left;
-  padding:10px;
-  box-sizing: border-box;
-}
 
-.travel-box{
-  background-color: turquoise;
-  height:100px;
-}
 
 /* food main */
+
+.food-main{
+  display: flex;
+}
+
+.cooking-left,.cooking-right{
+  width: 50%;
+  margin:0 20px;
+}
+
+.cooking-left p,.cooking-right p{
+  font-size: small;
+}
+
+
+
+.cooking-title h4{
+  font-size: 30px;
+  border-bottom: 2px solid rgba(77, 71, 71, 0.7);
+  margin: 0 0 20px 0;
+}
+
+.cooking-right a{
+  float: right;
+  color: #333;
+  text-decoration: none;
+  border: 1px solid rgba(77, 71, 71, 1) ;
+  padding: 0 10px;
+}
+
+
 
 /* links main */
 
