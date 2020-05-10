@@ -1,5 +1,5 @@
 body {
-  background-color: whitesmoke;
+  background-color: white;
   color: #333;
   font-family: 'Cormorant Upright',serif;
   margin:0 auto;
@@ -8,18 +8,18 @@ body {
 /* header */
 
 header {
-  background-image: url(image/top.jpg);
-  background-size: 100%;
+  background-image: url(image/top-80.webp);
+  background-size: cover;
   width: 100%;
-  height:auto;
+  height:720px;
   padding:30px 0;
 }
 
 .header-top h1{
   text-align: center;
   font-size:120px; 
-  margin:30px; 
   width: auto;
+  margin: 150px 0 0 0 ;
 }
 
 .header-bottom{
@@ -27,19 +27,35 @@ header {
   border-top:2px solid rgba(77, 71, 71, 0.7);
   border-bottom:2px solid rgba(77, 71, 71, 0.7);
   text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
 
+
+.header-bottom h1{
+  float: left;
+  margin: 0;
+  padding-left: 30px;
+  line-height: 70px;
+  color: white;
+ 
+}
+.header-bottom a{
+  text-decoration: none;
 }
 
 .page-list-item{
   display: inline-block;
-  font-size:30px;
+  font-size:25px;
 }
 
 .header-bottom ul{
-  padding: 0%;
   margin: 0%;
   height: 70px;
 }
+
 
 .btn{
   color: white;
@@ -54,7 +70,15 @@ header {
 
 .btn:hover{
   background-color:rgba(77, 71, 71, 0.7);
+  font-size: 35px;
 }
+
+.scroll{
+  width: 100%;
+  text-align: center;
+  
+}
+
 
 /* メイン内容 */
 
@@ -89,7 +113,49 @@ header {
   display: inline;
 }
 
+/* bignews */
+.bignews{
+  text-align: center;
+}
+
+/* about main */
+
+.about-box{
+  width: 100%;
+  text-align: center;
+}
+
+.details img{
+  float: left;
+  padding: 0 50px ;
+}
+
+.introduce{
+  padding-top: 50px;
+  width: 50%;
+  float: right;
+}
+
+.introduce span{
+  font-size: smaller;
+  padding-left: 15px;
+}
+
+.introduce p{
+  border-bottom: 1px solid rgba(77, 71, 71, 0.8);
+}
+
 /* days main */
+
+.camera{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.camera p{
+  padding-top:70px;
+}
 
 .days-item {
   width:32%;
@@ -101,43 +167,20 @@ header {
   border-radius: 5px;
 }
 
-/* about main */
-
-.about-box{
-  width: 50%;
-  float: left;
-  padding:10px;
-  box-sizing: border-box;
-  text-align: center;
-  /* height: auto;
-  overflow: hidden; */
-
-}
-
-.details img{
-  border-radius: 20px;
-  display: block;
-  margin:0 auto;
-  margin-bottom: 30px;
-}
-
-.details p{
-  line-height: 5px;
-}
+/* tontontimes */
 
 .tontontimes {
-  background-image: url(image/top.jpg);
-  background-size: cover;
-  height: 100%;
-  /* border-radius: 20px; */
-  width: 50%;
+  /* background-image: url(image/top.jpg);
+  background-size: cover; */
+  height: auto;
+  width: 100%;
   color: white;
 }
 
 .tontontimes-title{
   font-size: larger;
-  background-color: rgba(255, 254, 189, 0.8);
-  border-bottom:2px solid rgba(77, 71, 71, 0.7);
+  /* background-color: rgba(255, 254, 189, 0.8); */
+  border-bottom:1px solid rgba(77, 71, 71, 0.7);
   padding: 5px;
   color: #333;
 }
@@ -151,7 +194,7 @@ header {
   list-style-type: none;
   width: 33%;
   float: left;
-  border: 1px solid rgba(77, 71, 71, 0.7);
+  border: 1px solid rgba(77, 71, 71, 0.6);
   box-sizing: border-box;
 }
 
@@ -160,16 +203,16 @@ header {
   line-height: 60px;
   text-decoration: none;
   color: white;
-  background-color: rgba(77, 71, 71, 0.8);
+  background-color: rgba(77, 71, 71, 0.7);
   transition: 0.5s;
 }
 
 .tontontimes a:hover{
-  background-color: rgba(255, 254, 189, 0.8);
+  background-color: rgba(255, 254, 189, 0.7);
   color: #333;
 }
 
-li .tt202005, li .tt202006,li .tt202007, li .tt202008, li .tt202009, li .tt202010, li .tt202011, li .tt202012{
+li .tt202006,li .tt202007, li .tt202008, li .tt202009, li .tt202010, li .tt202011, li .tt202012{
   background-color:rgba(77,71,71,0.5);
   pointer-events: none;
 }
@@ -177,6 +220,39 @@ li .tt202005, li .tt202006,li .tt202007, li .tt202008, li .tt202009, li .tt20201
 
 /* travel main */
 
+.travel-links{
+  display: flex;
+}
+
+.travel-link{
+  position: relative;
+  width: 100%;
+
+}
+
+.travel-link a{
+  position: absolute;
+  top: 0;
+  left:0;
+  text-decoration: none;
+  line-height: 160px;
+  text-align: center;
+  width: 100%;
+  color: #333;
+}
+
+.travelpic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: none;
+}
+
+.clowd{
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+}
 
 /* food main */
 
@@ -201,7 +277,7 @@ li .tt202005, li .tt202006,li .tt202007, li .tt202008, li .tt202009, li .tt20201
   margin: 0 0 20px 0;
 }
 
-.cooking-right a{
+.sidelink{
   float: right;
   color: #333;
   text-decoration: none;
@@ -221,7 +297,7 @@ li .tt202005, li .tt202006,li .tt202007, li .tt202008, li .tt202009, li .tt20201
   text-align: center;
   padding-top: 30px;
   transition: 0.5s
-
+  
 }
 
 .links:hover{
@@ -240,7 +316,7 @@ li .tt202005, li .tt202006,li .tt202007, li .tt202008, li .tt202009, li .tt20201
 
 /* footer   */
 footer{
-  background-image: url(image/top.jpg);
+  background-image: url(image/top-80.webp);
   background-size: cover;
   text-align: center;
   color:white;
