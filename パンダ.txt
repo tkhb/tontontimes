@@ -1,0 +1,7 @@
+cd
+$FileName = Get-ChildItem -Name
+$FileName
+foreach ($Name in $FileName)
+ { $BaseName = [io.path]::GetFileNameWithoutExtension($Name)
+  cwebp -q 80 $Name -o $BaseName".webp"
+ }
