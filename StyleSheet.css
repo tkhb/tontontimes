@@ -212,7 +212,7 @@ header {
   color: #333;
 }
 
-li .tt202008, li .tt202009, li .tt202010, li .tt202011, li .tt202012{
+li .tt202009, li .tt202010, li .tt202011, li .tt202012{
   background-color:rgba(77,71,71,0.5);
   pointer-events: none;
 }
